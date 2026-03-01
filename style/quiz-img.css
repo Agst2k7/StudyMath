@@ -1,0 +1,24 @@
+.quiz-img {
+    height: 18rem;
+    width: 48rem;
+    border-radius: 0.25rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#input-box {
+    padding: 1rem, 4rem, 1rem, 4rem;
+    border-radius: 0.5rem;
+}
+
+#submit-btn {
+    border-radius: 0.5;
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 10px;
+}
+
+#quiz-warn-msg {
+    font-family: fantasy;
+}
