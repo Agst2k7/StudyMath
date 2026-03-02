@@ -19,6 +19,26 @@ const questions = [
         img: "../imgs/math/q1.png",
         correct_answer: "2+sqrt(3)"
     },
+    {
+        img: "../imgs/math/q2.png",
+        correct_answer: "0"
+    },
+    {
+        img: "../imgs/math/q3.png",
+        correct_answer: "0"
+    },
+    {
+        img: "../imgs/math/q4.png",
+        correct_answer: "0"
+    },
+    {
+        img: "../imgs/math/q5.png",
+        correct_answer: "0"
+    },
+    {
+        img: "../imgs/math/q6.png",
+        correct_answer: "0"
+    },
     
 ];
 
