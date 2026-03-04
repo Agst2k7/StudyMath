@@ -21,7 +21,7 @@ const questions = [
     },
     {
         img: "../imgs/math/q2.png",
-        correct_answer: "0"
+        correct_answer: "2+sqrt(3)"
     },
     {
         img: "../imgs/math/q3.png",
