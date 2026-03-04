@@ -25,15 +25,15 @@ const questions = [
     },
     {
         img: "../imgs/math/q3.png",
-        correct_answer: "0"
+        correct_answer: "-4"
     },
     {
         img: "../imgs/math/q4.png",
-        correct_answer: "0"
+        correct_answer: "3"
     },
     {
         img: "../imgs/math/q5.png",
-        correct_answer: "0"
+        correct_answer: "1"
     },
     {
         img: "../imgs/math/q6.png",
