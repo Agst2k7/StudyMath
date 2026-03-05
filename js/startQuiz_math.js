@@ -79,7 +79,9 @@ function quizEnd() {
     end_msg.classList.remove("hidden");
     quiz_warn_msg.classList.add("hidden");
     instructions_div.classList.add("hidden");
-    instruction.classList.add("hidden")
+    instruction.classList.add("hidden");
+    instructions_div.classList.add("hidden");
+    instruction.classList.add("hidden");
 
     atmp_mgp.textContent = "Precisou de " + attempts + " tentativas em " + qs_number + " questões."
     atmp_mgp.classList.remove("hidden");
