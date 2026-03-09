@@ -1,19 +1,26 @@
+function zeroExp() { 
+    return Math.random() < 1/100 // 1%
+}
+
 class Log {
 
     exact() {
-        let base = Math.floor(Math.random()*25);
-        let a =0;
-        let exp =0;
-        if (base > 10 ) {
-            exp = Math.floor(Math.random)*3 
+        let base = Math.floor(Math.random()*24)+1; 
+        let a = 0;
+        let exp = 0;
+        if (base > 10) {
+            exp = 2
         }
         else if ( base <= 2) {
-            a = Math.random()*10;
+            exp = Math.floor(Math.random()*10) + 1;
         }
         else {
-            a = base**(Math.random()*5);
+            exp = Math.floor(Math.random()*6);
         }
-        base = base**(Math.random()*5);
+
+        if (zeroExp()) {exp = 0;}
+
+        a = base**exp
 
 
         return `log(${a}, ${base})`;
