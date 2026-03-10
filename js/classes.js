@@ -41,7 +41,3 @@ class Log {
     }
 
 }
-
-log = new Log();
-
-console.log(log.exact());

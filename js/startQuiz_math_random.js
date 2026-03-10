@@ -10,6 +10,7 @@ const atmp_mgp = document.getElementById("atmp-msg");
 const instructions_div = document.getElementById("instructions-div");
 const instruction = document.getElementById("instruction");
 const equation_front = document.getElementById("equation");
+const start_btn = document.getElementById("start_math_random-btn");
 
 function generateEquation(level) {
     if (level == 1) {
@@ -21,26 +22,37 @@ const ops = ["+", "-", "*", "/"];
 
 function generateEqEasy() {
 
-    templates = [
-        // 1 parametro
-        [`${ex}`],
-        // 2 parametros
-        [`${a} ${op} ${b}`],
-        // 3 parametros
-        [`${a} ${op} ${b} ${op} ${c}`],
-        // 4 parametros
-        [`${a} ${op} ${b} ${op} ${c} ${op} ${d}`]
-    ]
+    // templates = [
+    //     // 1 parametro
+    //     [`${ex}`],
+    //     // 2 parametros
+    //     [`${a} ${op} ${b}`],
+    //     // 3 parametros
+    //     [`${a} ${op} ${b} ${op} ${c}`],
+    //     // 4 parametros
+    //     [`${a} ${op} ${b} ${op} ${c} ${op} ${d}`]
+    // ]
     const index1 = 1;
     // const index1 = Math.floor(Math.random()*templates.length);
-    const index2 = Math.floor(Math.random()*templates[index].length);
+    // const index2 = Math.floor(Math.random()*templates[index].length);
 
     if(index1 == 0) {
         const exp = new Log.exact();
         equation_front.textContent = `$$${exp}$$`;
+        MathJax.typesetPromise();
     }
 
     
 }
 
-generateEquation(1)
+
+
+function Start() {
+    generateEquation(1)
+}
+
+form.addEventListener("click", (event) => {
+    Start();
+    console.log("CLICK");
+})
+
